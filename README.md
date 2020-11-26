@@ -4,7 +4,15 @@ gRPC application with MVN protobuf plugin for Java stubs and Enabling Swagger UI
 
 This Repo is a working gRPC application, inspired and enhanced versions of https://github.com/yrreddy0123/yrrhelp gRPCDemo and https://github.com/grpc-swagger/grpc-swagger.
 
+# Build proto, Stub and Run
 
+Congratulations everything is pre-configured
+
+BTW Default task is:
+
+    clean generate-sources compile install
+
+You just need to run `mvn install` from CMD Or from IDE just run `mvn build` option
 
 # Enable Swagger UI
 ## Step1: Enable Reflection
@@ -55,8 +63,7 @@ Or you can use following options to run the jar
 Like
       
      java -jar grpc-swagger.jar --server.port=6565
-     
-     
-     
- 
+    
+![Swagger register with gRPC Service](/docs/reg.png)
 
+![Swagger UI with gRPC avaible functions as an endpoint](/docs/swaggerui.png)
